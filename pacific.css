@@ -1,14 +1,28 @@
+/*
+File: pacific.css
+GUI Assignment: Stylying already built HTML file with CSS
+Bladimir Nunez, UMass Lowell Computer Science, Bladimir_Nunez@student.uml.edu
+Copyright (c) 2023 by Nunez. All rights reserved. May be freely copied or 
+excerpted for educational purposes with credit to the author.
+updated by BN on May 21, 2023
+*/
+
+/*Starter CSS given by professor*/
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
-
+body {
+	background-image: url("ptrbackground.jpg");
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	height: 100%;
+}
 
 nav ul {
 	font-size: 1.2em;
 }
-nav a:visited {
-	color: #344873;
-}
+
 nav a:hover {
 	color: #FFFFFF;
 }
@@ -31,5 +45,94 @@ dt {
 }
 footer {
 	font-family: Georgia, "Times New Roman", serif;
+}
+
+/*Added CSS below*/
+
+/* Make wrapper container smaller to show background color*/
+#wrapper{
+	padding-right:55px;
+	padding-left: 55px;
+	padding-bottom: 55px;
+	position: absolute;
+}
+
+/*Make content div and footer same background color and height*/
+#content,footer{
+	background-color: white;
+	padding: 20px;
+	position: relative;
+	left: 200px;
+	width: 850px;
+	margin-right: 20px;
+	height: 317px;
+}
+
+/*resize navigation and give it background color*/
+nav{
+	width: 200px;
+	float: left;
+	height: 714px;
+	background-color: #75c9f2;
+}
+
+/*Place background img to header and make width same as rest of content*/
+header{
+	background-image: url("sunset.jpg");
+	width: 1090px;
+	
+}
+
+/*Make header title white color and bold*/
+header > h1{
+	color: white;
+	font-weight: bold;
+}
+
+/*In navigation make words into darker color and bold*/
+nav > ul > li > a{
+	color: #0d0d30;
+	font-weight: bold;
+	font-size: larger;
+	
+}
+
+/*Remove bullet points in navigation words*/
+nav > ul{
+	list-style-type: none;
+}
+
+/*Remove underlines from navigation words*/
+nav > ul > li > a{
+	text-decoration: none;
+}
+
+/*Make Gif provided into the bullet points for main page*/
+#content > ul > li{
+	list-style-image: url("marker.gif");
+}
+
+span{
+	color: #3399CC;
+	font-weight: bold;
+}
+
+/*Make img move left to place text right of it*/
+img{
+	float: left;
+	padding-right: 16px;
+	padding-bottom: 38px;
+}
+
+#contact{
+	padding: 10px;
+}
+
+p{
+	margin-left: 10px;
+}
+
+footer{
+	padding-top: 20px;
 }
 
